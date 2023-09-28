@@ -11,6 +11,5 @@ def frequencies(items):
             if(str(i) == key):
                 value += 1
         frequencies[key] = value
-        for i in range(value + 1):
-            items = [i for i in items if str(i) != key]
+        items = [i for i in items if str(i) != key]
     return frequencies
